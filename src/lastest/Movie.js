@@ -24,11 +24,12 @@ const Title = styled.span`
   bottom: 25px;
   left: 0;
   right: 0;
+
   margin: auto;
 `;
 
 const Movie = ({ id, title, rating, poster }) => (
-  <Link to={`/details/${id}/`}>
+  <Link to={`/details/${id}`}>
     <Card background={poster}>
       <Title>
         {title} / {rating}⭐️
